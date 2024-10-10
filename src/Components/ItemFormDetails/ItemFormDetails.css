@@ -1,0 +1,15 @@
+.formAllInputs{
+    width: 80%;
+    background-color: #EBEEFD;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 1px 2px 0px #10182850;
+}
+.formAllInputs .formInput{
+    width: 45%;
+}

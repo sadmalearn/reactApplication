@@ -1,0 +1,18 @@
+.mainHeaderDiv{
+    background-color: #007AFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.logoDiv{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* .headerText{
+    color: #FFFFFF;
+    font-weight: 500;
+} */
