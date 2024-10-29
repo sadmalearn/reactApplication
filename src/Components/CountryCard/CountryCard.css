@@ -1,0 +1,64 @@
+
+.countryCardMain {
+    flex: 1 1 20%; /* Allow cards to grow and shrink */
+    max-width: 20%; /* Limit width to 20% */
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.countryCardMain img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: fill;
+    /* mix-blend-mode: color-burn; */
+    border-bottom: 1px solid;
+}
+
+.countryDataDiv {
+    text-align: left;
+    padding: 10px;
+}
+
+.countryDataDiv h1 {
+    font-size: 1rem;
+    width: 95%;
+    white-space: nowrap;        
+    overflow: hidden;          
+    text-overflow: ellipsis;    
+    display: block;   
+}
+
+.lableField {
+    display: block;
+    font-size: 1rem;
+    /* color: #000000; */
+}
+
+.valueField {
+    font-size: 1rem;
+    /* color: #000000; */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .countryCardMain {
+        flex: 1 1 30%; /* Allow 3 cards per row on medium screens */
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .countryCardMain {
+        flex: 1 1 45%; /* Allow 2 cards per row on small screens */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .countryCardMain {
+        flex: 1 1 100%; /* Stack cards on top of each other on very small screens */
+        max-width: 100%;
+    }
+}

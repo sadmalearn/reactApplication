@@ -1,3 +1,3 @@
 export const apiBaseUrl = {
-    dev : 'https://apis-technical-test.conqt.com/'
+    dev : 'https://restcountries.com/v3.1/'
 }
