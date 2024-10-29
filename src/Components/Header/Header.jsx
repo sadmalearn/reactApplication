@@ -1,22 +1,16 @@
-import React from 'react'
-import Logo from '../../Assets/homeLogo.png'
-import './Header.css'
-
-
-const Header = () => {
-  return (
-    <div className='mainHeaderDiv'>
-        <div className='logoDiv'>
-            <img src={Logo} alt="" />
-        <span className='headerText'>
-        Inventory Management System
-        </span>
-        </div>
-        <div className='headerNavigate'>
-        Home
-        </div>
-    </div>
-  )
+import React from "react";
+import "./Header.css";
+import { AiFillMoon } from "react-icons/ai";
+import { FaSun } from "react-icons/fa";
+const Header = ({ toggleTheme, isDarkTheme }) => {
+    return (
+        <header className="app-header">
+            <h1 className="app-title">Where In The World?</h1>
+            <button className="theme-toggle-btn" onClick={toggleTheme}>
+                {isDarkTheme ? <span><FaSun /> Light Mode</span>  : <span><AiFillMoon /> Dark Mode</span>}
+            </button>
+        </header>
+    );
 }
 
-export default Header
+export default Header;

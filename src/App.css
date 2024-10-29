@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --background-color-dark: #1a1a1a;
+  --text-color-dark: #ffffff;
+  --primary-color: #4CAF50;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-theme {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.dark-theme {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.country-detail {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.country-detail:hover {
+    transform: scale(1.02);
+}
+
+.country-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.flag-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 2px solid #007BFF;
+}
+
+.info {
+    margin: 20px 0;
+    padding: 10px;
+    border-top: 1px solid #007BFF;
+    border-bottom: 1px solid #007BFF;
+}
+
+.info p {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.showMoreButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.showMoreButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

@@ -1,10 +1,137 @@
-.saveButton{
-    background-color: #007AFF;
-    padding: 10px 30px;
-    color: #fff;
-    border: 1px solid #007AFF;
-    border-radius: 6px;
+body {
+    transition: background-color 0.3s, color 0.3s;
 }
-.mainHomePageDiv h2, .mainHomePageDiv p{
+.app-title{
+    font-size: 1.5rem;
+}
+.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.allCountryCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px;
+}
+
+.mainComponent {
+    position: relative;
+    padding: 0 0 10px;
+}
+
+.app-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 3px 0 #a7a7a7;
+    z-index: 999;
+}
+
+.light-theme .app-header {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-theme .app-header {
+    background-color: #000;
+    color: #e0e0e0;
+}
+
+.filterDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.filterDiv select {
+    padding: 10px 5px;
+    width: 25%;
+}
+.noDataMessage {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: #777;
+    width: 100%;
+}
+
+.searchInput,
+.selectRegion {
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.searchInput {
+    width: 90%;
+    padding-left: 35px;
+}
+
+.searchInput:focus,
+.selectRegion:focus {
+    border-color: #6200ea;
+}
+
+.searchIcon {
+    position: absolute;
+    margin-left: 10px;
+    color: #6200ea;
+    top: 7px;
+    left: 0;
+}
+
+.showMoreButton {
+    padding: 10px;
+    background-color: #6200ea;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.light-theme .showMoreButton {
+    background-color: #6200ea;
+}
+
+.dark-theme .showMoreButton {
+    background-color: #3700b3;
+}
+
+.light-theme .searchInput,
+.light-theme .selectRegion {
+    border-color: #ccc;
+}
+
+.dark-theme .searchInput,
+.dark-theme .selectRegion {
+    border-color: #444;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-theme .searchInput::placeholder,
+.dark-theme .selectRegion::placeholder {
+    color: #bbb;
+}
+@media screen and (max-width : 630px) {
+.filterDiv select {
+    padding: 10px 5px;
+    width: 40%;
+    margin: 10px 0;
+}
 }

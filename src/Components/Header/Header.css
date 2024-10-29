@@ -1,18 +1,20 @@
-.mainHeaderDiv{
-    background-color: #007AFF;
+.app-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:5px 10px;
-    color: #FFFFFF;
-    font-weight: 500;
+    padding: 0px 10px;
+    margin-bottom: 10px;
 }
-.logoDiv{
+.theme-toggle-btn span{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
-/* .headerText{
-    color: #FFFFFF;
-    font-weight: 500;
-} */
+.theme-toggle-btn{
+    font-size: 1rem;
+    border: none;
+    background-color: transparent; 
+}
+.dark-theme .theme-toggle-btn{
+    color: #fff;
+}
